@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npm install:*)",
+      "Bash(npm init:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(git --version)",
+      "Bash(winget install:*)",
+      "Bash(where:*)",
+      "Bash(powershell \"Get-Command gh -ErrorAction SilentlyContinue | Select-Object Source\")",
+      "Bash(powershell:*)",
+      "Bash($env:PATH += \";C:\\Program Files\\GitHub CLI\")",
+      "Bash(gh:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
