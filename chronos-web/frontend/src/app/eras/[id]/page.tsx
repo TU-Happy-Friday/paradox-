@@ -5,7 +5,8 @@ import { api } from '@/lib/api';
 import { EventCard } from '@/components/EventCard';
 
 export default async function EraPage({ params }: { params: { id: string } }) {
-  const era = await api.getEra(params.id).catch(() => null);
+  const { id } = await params;
+  const era = await api.getEra(id).catch(() => null);
 
   if (!era) {
     notFound();
