@@ -4,7 +4,7 @@ import { ChevronLeft, Calendar, MapPin } from 'lucide-react';
 import { api } from '@/lib/api';
 import { EventCard } from '@/components/EventCard';
 
-export default async function EraPage({ params }: { params: { id: string } }) {
+export default async function EraPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const era = await api.getEra(id).catch(() => null);
 
